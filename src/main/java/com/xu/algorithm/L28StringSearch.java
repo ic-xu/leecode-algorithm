@@ -7,18 +7,10 @@ package com.xu.algorithm;
  */
 public class L28StringSearch {
 
-
-}
-
-/**
- *
- */
-class KMP {
-
     private final String pat;
     private int[][] dp;
 
-    public KMP(String pat) {
+    public L28StringSearch(String pat) {
         this.pat = pat;
         //构建netval 数组
         int M = pat.length();
@@ -40,13 +32,6 @@ class KMP {
             // 更新影子状态
             X = dp[X][pat.charAt(j)];
         }
-    }
-
-
-    public int search(String text) {
-
-
-        return -1;
     }
 
 }
